@@ -4,6 +4,10 @@ hr{
    opacity: 0.3;
 }
 
+.white-text{
+  color: white;
+}
+
 th{
   text-align: center;
 }
