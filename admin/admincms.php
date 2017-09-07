@@ -29,7 +29,7 @@ include('connect.php');
             echo '<tr>
             <td>'.$id.'</td>
             <td>'.$content.'</td>
-            <td><a class="btn btn-default updategen" href="javascript:void(0);" data-id="'.$id.'" data-content="'.$content.'">Update</a></td>
+            <td><a class="btn btn-default updategen" href="javascript:void(0);" data-uid="'.$uid.'" data-id="'.$id.'" data-content="'.$content.'">Update</a></td>
             </tr>';
             $count = $count - 1;
             }
@@ -40,16 +40,18 @@ include('connect.php');
 
 <div class="well" id="updategeneral">
 <?php
+$uid = $_GET['uid'];
 $id = $_GET['id'];
 $content = $_GET['content'];
 ?>
-<form method="post" class="col-md-10" action="updategeneral.php">
+<form method="post" class="col-md-10" action="src/updategeneral.php">
          <label class="text-center">Identifier</label>
          <input type="text" id="gen_id" name="identifier" style="width:100%;" value="<?php echo $id;?>" disabled>
          <br>
          <label>Content</label>
          <textarea rows="10" name="content" id="gen_content" style="width:100%;"><?php echo $content;?></textarea>
          <br>
+         <input type="hidden" id="gen_uid" name="uid" style="width:100%;" value="<?php echo $uid;?>">
          <input type="submit">
  </form>
 </div>
@@ -71,6 +73,7 @@ $content = $_GET['content'];
           $count = mysqli_num_rows($result);
           while($count>0){
             $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
             $id = $res['imageno'];
             $content = $res['name'];
             $desc = $res['description'];
@@ -78,7 +81,7 @@ $content = $_GET['content'];
             <td>'.$id.'</td>
             <td>'.$content.'</td>
             <td>'.$desc.'</td>
-            <td><a class="btn btn-default updatenot" href="javascript:void(0);" data-id="'.$id.'" data-name="'.$content.'" data-desc="'.$desc.'">Update</a></td>
+            <td><a class="btn btn-default updatenot" href="javascript:void(0);" data-id="'.$id.'" data-uid="'.$uid.'" data-name="'.$content.'" data-desc="'.$desc.'">Update</a></td>
             </tr>';
             $count = $count - 1;
           }
@@ -89,11 +92,12 @@ $content = $_GET['content'];
 
 <div class="well" id="updatenotable">
 <?php
+$uid = $_GET['uid'];
 $id = $_GET['id'];
 $content = $_GET['name'];
 $desc = $_GET['desc'];
 ?>
-<form method="post" class="col-md-10" action="updategeneral.php">
+<form method="post" class="col-md-10" action="src/updatenotable.php">
          <label class="text-center">Image No.</label>
          <input type="text" id="not_id" name="imageno" style="width:100%;" value="<?php echo $id;?>">
          <br>
@@ -103,6 +107,7 @@ $desc = $_GET['desc'];
          <label>Description</label>
          <input type="text" name="desc" id="not_desc" style="width:100%;" value="<?php echo $desc;?>">
          <br>
+         <input type="hidden" name="uid" id="not_uid" style="width:100%;" value="<?php echo $uid;?>">
          <input type="submit">
  </form>
 </div>
@@ -125,6 +130,7 @@ $desc = $_GET['desc'];
           $count = mysqli_num_rows($result);
           while($count>0){
             $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
             $dd = $res['dd'];
             $mm = $res['mm'];
             $yy = $res['yyyy'];
@@ -134,7 +140,7 @@ $desc = $_GET['desc'];
             <td>'.$mm.'</td>
             <td>'.$yy.'</td>
             <td>'.$text.'</td>
-            <td><a class="btn btn-default updateevents" href="javascript:void(0);" data-dd="'.$dd.'" data-mm="'.$mm.'" data-yy="'.$yy.'" data-text="'.$text.'">Update</a></td>
+            <td><a class="btn btn-default updateevents" href="javascript:void(0);" data-id="'.$uid.'" data-dd="'.$dd.'" data-mm="'.$mm.'" data-yy="'.$yy.'" data-text="'.$text.'">Update</a></td>
             </tr>';
             $count = $count - 1;
           }
@@ -145,12 +151,13 @@ $desc = $_GET['desc'];
 
 <div class="well" id="updateevents">
 <?php
+$id = $_POST['id'];
 $dd = $_POST['dd'];
 $mm = $_POST['mm'];
 $yy = $_POST['yy'];
 $text = $_POST['text'];
 ?>
-<form method="post" class="col-md-10" action="updategeneral.php">
+<form method="post" class="col-md-10" action="src/updateevents.php">
          <label class="text-center">Day</label>
          <input type="number" id="events_dd" name="dd" style="width:100%;" value="<?php echo $dd;?>">
          <br>
@@ -163,6 +170,7 @@ $text = $_POST['text'];
          <label>Desctiption</label>
          <input type="text" name="desc" id="events_text" style="width:100%;" value="<?php echo $text;?>">
          <br>
+         <input type="hidden" name="id" id="events_uid" style="width:100%;" value="<?php echo $id;?>">
          <input type="submit">
  </form>
 </div>
@@ -186,6 +194,7 @@ $text = $_POST['text'];
           $count = mysqli_num_rows($result);
           while($count>0){
             $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
             $lno = $res['lectureno'];
             $speaker = $res['speaker'];
             $topic = $res['topic'];
@@ -197,12 +206,43 @@ $text = $_POST['text'];
             <td>'.$topic.'</td>
             <td>'.$date.'</td>
             <td>'.$content.'</td>
+            <td><a class="btn btn-default updatebtw" href="javascript:void(0);" data-id="'.$uid.'" data-speaker="'.$speaker.'" data-topic="'.$topic.'" data-date="'.$date.'" data-lectureno="'.$lno.'" data-content="'.$content.'">Update</a></td>
             </tr>';
             $count = $count - 1;
           }
           ?>
         </tbody>
         </table>
+</div>
+
+<div class="well" id="updatebtw">
+<?php
+$lectureno = $_POST['lectureno'];
+$topic = $_POST['topic'];
+$id = $_POST['id'];
+$speaker = $_POST['speaker'];
+$desc = $_POST['desc'];
+$date = $_POST['date'];
+?>
+<form method="post" class="col-md-10" action="src/updatebtw.php">
+         <label class="text-center">Lecture No</label>
+         <input type="number" id="btw_lno" name="imageno" style="width:100%;" value="<?php echo $lectureno;?>">
+         <br>
+         <label>Topic</label>
+         <input type="text" name="topic" id="btw_topic" style="width:100%;" value="<?php echo $topic;?>">
+         <br>
+         <label>Speaker</label>
+         <input type="text" name="speaker" id="btw_topic" style="width:100%;" value="<?php echo $speaker;?>">
+         <br>
+         <label>Date</label>
+         <input type="text" name="date" id="btw_date" style="width:100%;" value="<?php echo $date;?>">
+         <br>
+         <label>Topic</label>
+         <textarea rows="6" name="caption" id="btw_desc" style="width:100%;"><?php echo $desc;?></textarea>
+         <br>
+         <input type="hidden" name="uid" id="btw_id" style="width:100%;" value="<?php echo $id;?>">
+         <input type="submit">
+ </form>
 </div>
 
 <div class="well" id="gallerytable">
@@ -221,15 +261,35 @@ $text = $_POST['text'];
           $count = mysqli_num_rows($result);
           while($count>0){
             $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
             $id = $res['imageno'];
             $content = $res['caption'];
             echo '<tr>
             <td>'.$id.'</td>
             <td>'.$content.'</td>
+            <td><a class="btn btn-default updategallery" href="javascript:void(0);" data-imageno="'.$id.'" data-caption="'.$content.'" data-id="'.$uid.'">Update</a></td>
             </tr>';
             $count = $count - 1;
           }
           ?>
         </tbody>
         </table>
+</div>
+
+<div class="well" id="updategallery">
+<?php
+$imageno = $_POST['imageno'];
+$caption = $_POST['caption'];
+$id = $_POST['id'];
+?>
+<form method="post" class="col-md-10" action="src/updategallery.php">
+         <label class="text-center">Image No</label>
+         <input type="text" id="gallery_imno" name="imageno" style="width:100%;" value="<?php echo $imageno;?>">
+         <br>
+         <label>Caption</label>
+         <input type="text" name="caption" id="gallery_caption" style="width:100%;" value="<?php echo $caption;?>">
+         <br>
+         <input type="hidden" name="uid" id="gallery_id" style="width:100%;" value="<?php echo $id;?>">
+         <input type="submit">
+ </form>
 </div>

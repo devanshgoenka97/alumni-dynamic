@@ -23,22 +23,42 @@ $("#gallery").click(function(){
 });
 
 $(document).on('click','.updategen',function(){
+	uid = $(this).data("uid");
 	id = $(this).data("id");
 	content = $(this).data("content");
-    $("#table").load("admincms.php #updategeneral","id="+id+"&content="+content);
+    $("#table").load("admincms.php #updategeneral","uid="+uid+"&id="+id+"&content="+content);
 });
 
 $(document).on('click','.updatenot',function(){
+	uid = $(this).data("uid");
 	id = $(this).data("id");
 	name = $(this).data("name");
 	desc = $(this).data("desc");
-    $("#table").load("admincms.php #updatenotable","id="+id+"&name="+name+"&desc="+desc);
+    $("#table").load("admincms.php #updatenotable","uid="+uid+"&id="+id+"&name="+name+"&desc="+desc);
 });
 
 $(document).on('click','.updateevents',function(){
+	id = $(this).data("id");
 	dd = $(this).data("dd");
 	mm = $(this).data("mm");
 	yy = $(this).data("yy");
 	text = $(this).data("text");
-    $("#table").load("admincms.php #updateevents",{"dd":dd,"mm":mm,"yy":yy,"text":text});
+    $("#table").load("admincms.php #updateevents",{"id":id,"dd":dd,"mm":mm,"yy":yy,"text":text});
+});
+
+$(document).on('click','.updategallery',function(){
+	imageno = $(this).data("imageno");
+	caption = $(this).data("caption");
+	id = $(this).data("id");
+    $("#table").load("admincms.php #updategallery",{"imageno":imageno,"caption":caption,"id":id});
+});
+
+$(document).on('click','.updatebtw',function(){
+	lectureno = $(this).data("lectureno");
+	desc = $(this).data("content");
+	id = $(this).data("id");
+	topic = $(this).data("topic");
+	speaker = $(this).data("speaker");
+	date = $(this).data("date");
+    $("#table").load("admincms.php #updatebtw",{"lectureno":lectureno,"id":id,"desc":desc,"topic":topic,"speaker":speaker,"date":date});
 });
