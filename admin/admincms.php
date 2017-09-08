@@ -157,7 +157,7 @@ $mm = $_POST['mm'];
 $yy = $_POST['yy'];
 $text = $_POST['text'];
 ?>
-<form method="post" class="col-md-10" action="src/updateevents.php">
+<form method="post" class="col-md-10" action="src/updatevents.php">
          <label class="text-center">Day</label>
          <input type="number" id="events_dd" name="dd" style="width:100%;" value="<?php echo $dd;?>">
          <br>
@@ -238,7 +238,7 @@ $date = $_POST['date'];
          <input type="text" name="date" id="btw_date" style="width:100%;" value="<?php echo $date;?>">
          <br>
          <label>Topic</label>
-         <textarea rows="6" name="caption" id="btw_desc" style="width:100%;"><?php echo $desc;?></textarea>
+         <textarea rows="6" name="desc" id="btw_desc" style="width:100%;"><?php echo $desc;?></textarea>
          <br>
          <input type="hidden" name="uid" id="btw_id" style="width:100%;" value="<?php echo $id;?>">
          <input type="submit">

@@ -53,5 +53,5 @@ if($_SESSION['admin']!=1){
 </div>
 
 </body>
-  <script src="custom.js"></script>
+  <script src="js/custom.js"></script>
 </html>
