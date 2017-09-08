@@ -22,6 +22,26 @@ $("#gallery").click(function(){
     fetchTable('gallerytable');
 });
 
+$(document).on('click','#addgeneral',function(){
+    $("#table").load("admincms.php .addgeneral");
+});
+
+$(document).on('click','#addbtw',function(){
+    $("#table").load("admincms.php .addbtw");
+});
+
+$(document).on('click','#addevents',function(){
+    $("#table").load("admincms.php .addevents");
+});
+
+$(document).on('click','#addnotable',function(){
+    $("#table").load("admincms.php .addnotable");
+});
+
+$(document).on('click','#addgallery',function(){
+    $("#table").load("admincms.php .addgallery");
+});
+
 $(document).on('click','.updategen',function(){
 	uid = $(this).data("uid");
 	id = $(this).data("id");
