@@ -1,4 +1,4 @@
-<?php include('connect.php');?>
+<?php include('src/connect.php');?>
 <div id="homewrapper">
  <div class="row home-main-row">
   <div class="col-md-2 first-card">
@@ -854,7 +854,7 @@
 		<hr>
 	</div>
 	<div class="form-wrapper">
-		<form class="form-horizontal" method="post">
+		<form class="form-horizontal" method="post" id="registerForm">
 			     <div class="form-group">
                 <label class="control-label col-sm-2" for="name">Name *:</label>
                 <div class="col-sm-3">
@@ -867,7 +867,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="yearofpassing">Batch of *:</label>
                 <div class="col-sm-3">          
-                    <select class="form-control" id="yearofpassing" required>
+                    <select class="form-control" id="yearofpassing" name="yearofpassing" required>
                       <option disabled>Select your option</option>
                       <?php
                       $count=2017;
@@ -882,7 +882,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="dob">Date of Birth *:</label>
                 <div class="col-sm-3">
-                   <select class="form-control" id="dayofbirth" required>
+                   <select class="form-control" id="dayofbirth" name="dateob">
                       <option disabled>DD</option>
                       <?php
                       $count=1;
@@ -894,8 +894,8 @@
                     </select>
                 </div>
                 <div class="col-sm-3">
-                   <select class="form-control" id="monthofbirth" required>
-                      <option disabled>MM</option>
+                   <select class="form-control" id="monthofbirth" name="monthob">
+                      <option disabled>MM</option> 
                       <?php
                       $count=1;
                       while($count<=12){
@@ -912,7 +912,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="degree">Degree *:</label>
                 <div class="col-sm-3">          
-                    <select class="form-control" id="degree" required>
+                    <select class="form-control" id="degree" name="degree" required>
                       <option disabled>Select your option</option>
                       <option>B.E/B.Tech</option>
                       <option>M.Tech</option>
@@ -926,7 +926,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="department">Department *:</label>
                 <div class="col-sm-3">          
-                    <select class="form-control" id="department" required>
+                    <select class="form-control" id="department" name="department" required>
                       <option disabled>Select your option</option>
                       <option>BT</option>
                       <option>CE</option>
@@ -960,7 +960,7 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="phone">Phone No. *:</label>
                 <div class="col-sm-3">  
-                    <input type="number" class="form-control" id="phone" placeholder="Phone" name="phone" required>   
+                    <input type="number" class="form-control" id="phone" placeholder="Phone" name="phone">   
                 </div>
             </div>   
             <div class="form-group">
@@ -987,7 +987,7 @@
                 </div>
                 <label class="control-label col-sm-3" for="currentcity">Current City *:</label>
                 <div class="col-sm-3">  
-                    <input type="text" class="form-control" id="currentcity" placeholder="Current City" name="currentcity" required>   
+                    <input type="text" class="form-control" id="currentcity" placeholder="Current City" name="currentcity">   
                 </div>
             </div>   
             <div class="form-group">
@@ -995,7 +995,7 @@
                 </div>
                 <label class="control-label col-sm-3" for="addinfo">Additional Information:</label>
                 <div class="col-sm-3">  
-                    <textarea rows="2" class="form-control" id="addinfo" placeholder="Any other details"></textarea>
+                    <textarea rows="2" class="form-control" id="addinfo" placeholder="Any other details" name="addinfo"></textarea>
                 </div>
             </div> 
             <div class="form-group">
@@ -1012,7 +1012,7 @@
             </div>   
             <div class="form-group">
               <div class="col-sm-3"></div>
-            <button type="submit" class="col-sm-4 btn btn-default">Register</button>  
+            <input type="button" id="registerButton" class="btn btn-default" value="Submit"> 
             </div>      
 		</form>
 	</div>

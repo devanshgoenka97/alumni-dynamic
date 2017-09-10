@@ -93,3 +93,14 @@ window.addEventListener('scroll', function() {
     remove_class_on_scroll();
   }
 });
+
+$(document).on('click','#registerButton',function(){
+$.ajax({
+     type: "POST",
+     url: 'src/register.php',
+     data: $("#registerForm").serialize(),
+     success: function(server_message) {
+         alert(server_message);
+     }
+});
+});
