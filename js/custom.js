@@ -3,6 +3,9 @@ function fetchSection(url){
 }
 
 $(document).ready(function(){
+      $('.carousel').carousel({
+          interval: 2000
+      });
 });
 
 $("#home").click(function(){
