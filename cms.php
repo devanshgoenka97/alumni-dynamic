@@ -1,5 +1,10 @@
 <?php include('src/connect.php');?>
 <div id="homewrapper">
+         <script type='text/javascript'>
+         $(document).ready(function() {
+         $(function() {$('.carousel').carousel({interval: 2000});});    
+         });    
+        </script>
  <div class="row home-main-row">
   <div class="col-md-2 first-card">
       <div class="row shadow event-row">
@@ -151,23 +156,23 @@
    <div class="row login-row shadow">
     <div class="login-wrapper">
     <p class="card-header text-center">Login</p>
-    <form method="post">
+    <form method="post" id="loginForm">
     
     <div class="group">      
-      <input type="text" required>
+      <input type="text" name="email" required>
       <span class="highlight"></span>
       <span class="bar"></span>
-      <label>Login ID</label>
+      <label>Email</label>
     </div>
       
     <div class="group">      
-      <input type="text" required>
+      <input type="password" name="password" required>
       <span class="highlight"></span>
       <span class="bar"></span>
       <label>Password</label>
     </div>
     
-    <button type="button" class="btn btn-primary login">Submit</button>
+    <button id="loginButton" type="button" class="btn btn-primary login">Submit</button>
   </form>
   <h6 id="newreg">New user? Join our network <a href="#">here!</a></h6>
    <div class="row">

@@ -3,9 +3,6 @@ function fetchSection(url){
 }
 
 $(document).ready(function(){
-      $('.carousel').carousel({
-          interval: 2000
-      });
 });
 
 $("#home").click(function(){
@@ -99,6 +96,17 @@ $.ajax({
      type: "POST",
      url: 'src/register.php',
      data: $("#registerForm").serialize(),
+     success: function(server_message) {
+         alert(server_message);
+     }
+});
+});
+
+$(document).on('click','#loginButton',function(){
+$.ajax({
+     type: "POST",
+     url: 'src/login.php',
+     data: $("#loginForm").serialize(),
      success: function(server_message) {
          alert(server_message);
      }
