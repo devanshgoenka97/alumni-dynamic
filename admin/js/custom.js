@@ -2,6 +2,10 @@ function fetchTable(attr){
 	$("#table").load("admincms.php #"+attr);
 }
 
+$("#users").click(function(){
+    fetchTable('userstable');
+});
+
 $("#general").click(function(){
     fetchTable('generaltable');
 });
@@ -81,4 +85,15 @@ $(document).on('click','.updatebtw',function(){
 	speaker = $(this).data("speaker");
 	date = $(this).data("date");
     $("#table").load("admincms.php #updatebtw",{"lectureno":lectureno,"id":id,"desc":desc,"topic":topic,"speaker":speaker,"date":date});
+});
+
+$(document).on('click','.approve',function(){
+	$.ajax({
+         type: "POST",
+         url: 'src/approveuser.php',
+         data: {'id':$(this).data("uid")},
+         success: function(server_message) {
+         alert(server_message);
+       }
+	});
 });

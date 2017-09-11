@@ -214,6 +214,10 @@ form .login{
 	margin-left: 150px;
 }
 
+#registerButton{
+  width: 30%;
+}
+
 .text-left{
 	text-align: left;
 }

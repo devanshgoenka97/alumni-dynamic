@@ -880,7 +880,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="dob">Date of Birth *:</label>
+                <label class="control-label col-sm-2" for="dob">Date of Birth :</label>
                 <div class="col-sm-3">
                    <select class="form-control" id="dayofbirth" name="dateob">
                       <option disabled>DD</option>
@@ -951,6 +951,18 @@
                     <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>   
                 </div>
             </div>  
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="password">Password *:</label>
+                <div class="col-sm-6">  
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>   
+                </div>
+            </div> 
+                    <div class="form-group">
+                <label class="control-label col-sm-2" for="confirmpassword">Confirm Password *:</label>
+                <div class="col-sm-6">  
+                    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password" name="confirmpassword" required>   
+                </div>
+            </div> 
             <div class="form-group">
                 <label class="control-label col-sm-2" for="alternateemail">Alternate Email:</label>
                 <div class="col-sm-6">  
@@ -958,7 +970,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="phone">Phone No. *:</label>
+                <label class="control-label col-sm-2" for="phone">Phone No. :</label>
                 <div class="col-sm-3">  
                     <input type="number" class="form-control" id="phone" placeholder="Phone" name="phone">   
                 </div>
@@ -985,7 +997,7 @@
             <div class="form-group">
                 <div class="col-sm-1">
                 </div>
-                <label class="control-label col-sm-3" for="currentcity">Current City *:</label>
+                <label class="control-label col-sm-3" for="currentcity">Current City :</label>
                 <div class="col-sm-3">  
                     <input type="text" class="form-control" id="currentcity" placeholder="Current City" name="currentcity">   
                 </div>
@@ -1003,13 +1015,7 @@
                 <div class="col-sm-6">  
                     <input type="url" class="form-control" id="linkedin" placeholder="LinkedIn Profile Link" name="linkedin">   
                 </div>
-            </div>      
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="picture">Upload Picture:</label>
-                <div class="col-sm-6">  
-                    <input type="file" class="form-control" id="picture" name="picture">   
-                </div>
-            </div>   
+            </div>        
             <div class="form-group">
               <div class="col-sm-3"></div>
             <input type="button" id="registerButton" class="btn btn-default" value="Submit"> 

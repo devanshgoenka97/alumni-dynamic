@@ -31,6 +31,17 @@ if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 	echo "Please enter a valid Email address!";
 	return;
 }
+$passcode = $_POST['password'];
+if($passcode==''){
+	echo "Password is a Required Field";
+	return;
+}
+$confirmpasscode = $_POST['confirmpassword'];
+if($confirmpasscode=='' || $confirmpasscode!=$passcode){
+	echo "Passwords Do Not Match!";
+	return;
+}
+$passcode = password_hash($passcode,PASSWORD_DEFAULT);
 $altemail = $_POST['altemail'];
 $phone = $_POST['phone'];
 $currentorg = $_POST['currentorg'];
@@ -87,7 +98,14 @@ if($linkedin==''){
 	$linkedin = 'NULL';
 }
 
-$sql = "INSERT INTO temp_users VALUES(NULL,'".$firstname."','".$lastname."',".$yearofpassing.",'".$degree."','".$department."','".$email."','".$altemail."',".$phone.",".$dateob.",".$monthob.",'".$currentorg."','".$currentcity."','".$designation."','".$addinfo."','".$linkedin."')";
+$sql = "SELECT * from temp_users WHERE email='".$email."' AND firstname='".$firstname."' AND lastname='".$lastname."'";
+$result = mysqli_query($conn,$sql);
+if(mysqli_num_rows($result)>0){
+	echo "Sorry, this account already exists";
+	return;
+}
+
+$sql = "INSERT INTO temp_users VALUES(NULL,'".$firstname."','".$lastname."',".$yearofpassing.",'".$degree."','".$department."','".$email."','".$passcode."','".$altemail."',".$phone.",".$dateob.",".$monthob.",'".$currentorg."','".$currentcity."','".$designation."','".$addinfo."','".$linkedin."')";
 
 $result = mysqli_query($conn,$sql);
 

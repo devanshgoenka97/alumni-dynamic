@@ -6,6 +6,46 @@ if($_SESSION['admin']!=1){
 include('connect.php');
 ?>
 
+<div class="well" id="userstable">
+        <h3 class="text-center">Pending Users Waiting for Approval</h3>
+        <table class="table table-striped table-responsive">
+        <thead>
+          <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Year of Passing</th>
+          <th>Degree</th>
+          <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          $sql = "SELECT * from temp_users";
+          $result = mysqli_query($conn,$sql);
+          $count = mysqli_num_rows($result);
+          while($count>0){
+            $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
+            $firstname = $res['firstname'];
+            $lastname = $res['lastname'];
+            $year = $res['yearofpassing'];
+            $degree = $res['degree'];
+            $department = $res['department'];
+            echo '<tr>
+            <td>'.$firstname.'</td>
+            <td>'.$lastname.'</td>
+            <td>'.$year.'</td>
+            <td>'.$degree.'</td>
+            <td>'.$department.'</td>
+            <td><a class="btn btn-default approve" href="javascript:void(0);" data-uid="'.$uid.'">Approve</a></td>
+            </tr>';
+            $count = $count - 1;
+            }
+          ?>
+        </tbody>
+        </table>
+</div>
+
 <div class="well" id="generaltable">
         <h3 class="text-center">General Content</h3>
         <a class="btn btn-default" id="addgeneral">Add</a>

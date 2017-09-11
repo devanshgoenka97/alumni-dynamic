@@ -34,6 +34,7 @@ if($_SESSION['admin']!=1){
     <div class="col-sm-2 sidenav hidden-xs">
       <h2>NIT Durgapur Alumni Cell</h2>
       <ul class="nav nav-pills nav-stacked">
+        <li><a id="users" href="#">Pending User Approvals</a></li>
         <li><a id="general" href="#">General Content</a></li>
         <li><a id="events" href="#">Events</a></li>
         <li><a id="notable" href="#">Notable Alumni</a></li>
