@@ -105,6 +105,30 @@ $(document).on('click','.updateiiip',function(){
     $("#table").load("admincms.php #updateiiip",{"lectureno":lectureno,"id":id,"desc":desc,"topic":topic,"speaker":speaker,"date":date});
 });
 
+$(document).on('click','.deleteiiip',function(){
+    id = $(this).data("id");
+    $.ajax({
+    	type:'POST',
+    	url:'src/deleteiiip.php',
+    	data:{'id':id},
+    	success: function(result){
+    		alert(result);
+    	}
+    });
+});
+
+$(document).on('click','.deletebtw',function(){
+    id = $(this).data("id");
+    $.ajax({
+    	type:'POST',
+    	url:'src/deletebtw.php',
+    	data:{'id':id},
+    	success: function(result){
+    		alert(result);
+    	}
+    });
+});
+
 $(document).on('click','.approve',function(){
 	$.ajax({
          type: "POST",

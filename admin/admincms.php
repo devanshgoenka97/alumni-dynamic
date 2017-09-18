@@ -299,6 +299,7 @@ $text = $_POST['text'];
             <td>'.$date.'</td>
             <td>'.$content.'</td>
             <td><a class="btn btn-default updatebtw" href="javascript:void(0);" data-id="'.$uid.'" data-speaker="'.$speaker.'" data-topic="'.$topic.'" data-date="'.$date.'" data-lectureno="'.$lno.'" data-content="'.$content.'">Update</a></td>
+            <td><a class="btn btn-default deletebtw" href="javascript:void(0);" data-id="'.$uid.'">Delete</a></td>
             </tr>';
             $count = $count - 1;
           }
@@ -394,6 +395,7 @@ $date = $_POST['date'];
             <td>'.$date.'</td>
             <td>'.$content.'</td>
             <td><a class="btn btn-default updatebtw" href="javascript:void(0);" data-id="'.$uid.'" data-speaker="'.$speaker.'" data-topic="'.$topic.'" data-date="'.$date.'" data-lectureno="'.$lno.'" data-content="'.$content.'">Update</a></td>
+            <td><a class="btn btn-default deleteiiip" href="javascript:void(0);" data-id="'.$uid.'">Delete</a></td>
             </tr>';
             $count = $count - 1;
           }
