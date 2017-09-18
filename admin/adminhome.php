@@ -41,7 +41,7 @@ if($_SESSION['admin']!=1){
         <li><a id="btw" href="#">Beyond The Walls</a></li>
         <li><a id="iiip" href="#">Industry Institute Interaction</a></li>
         <li><a id="gallery" href="#">Photo Gallery</a></li>
-        <li><a id="logout" href="logout.php">Logout</a></li>
+        <li><a id="logout" href="src/logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>
