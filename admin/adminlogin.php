@@ -7,6 +7,6 @@ if($username=='admin' && $password=='admin123'){
     header('Location: adminhome.php');
 }
 else{
-    header('Location: logout.php');
+    header('Location: src/logout.php');
 }
 ?>

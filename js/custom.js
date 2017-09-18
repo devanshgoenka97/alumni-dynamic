@@ -109,6 +109,7 @@ $.ajax({
      data: $("#loginForm").serialize(),
      success: function(server_message) {
          alert(server_message);
+         window.location.href="index.php";
      }
 });
 });

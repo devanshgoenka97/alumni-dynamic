@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $id = $_POST['uid'];
 $content = $_POST['content'];
 $sql = "UPDATE general SET content='".$content."' WHERE id=".$id;

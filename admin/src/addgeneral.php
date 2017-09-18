@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $id = $_POST['identifier'];
 $content = $_POST['content'];
 $sql = "INSERT INTO general VALUES(NULL,'".$id."','".$content."')";

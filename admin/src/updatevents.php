@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $id = $_POST['id'];
 $dd = $_POST['dd'];
 $mm = $_POST['mm'];

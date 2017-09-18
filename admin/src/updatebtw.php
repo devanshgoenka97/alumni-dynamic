@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $id = $_POST['uid'];
 $lectureno = $_POST['imageno'];
 $speaker = $_POST['speaker'];

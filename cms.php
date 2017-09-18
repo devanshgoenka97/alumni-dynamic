@@ -1307,6 +1307,52 @@ while($res = mysqli_fetch_assoc($result)){
       </div> 
   </div>
 
+    <?php
+  $sql = "SELECT * from iiiprogramme";
+  $result = mysqli_query($conn,$sql);
+  $rows = mysqli_num_rows($result);
+  while($rows!=0){
+    $res = mysqli_fetch_assoc($result);
+    $lectureno = $res['lectureno'];
+    $topic = $res['topic'];
+    $date = $res['date'];
+    $speaker = $res['speaker'];
+    $content = $res['content'];
+    echo '<div class="btw-label col-md-10 col-md-offset-1">
+      <div class="row">
+        <img src="img/II'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
+        <div class="col-md-8 btw-text shadow">
+            <h4> Speaker: '.$speaker.'<b></b></h4>
+            <h4> Topic : '.$topic.'</h4>
+            <h5>Date: '.$date.'</h5>
+        </div>
+      </div>
+      <a href="#btw'.$lectureno.'" data-toggle="modal" data-target="#btw'.$lectureno.'" class="read-more">
+        Read More
+      </a>
+  </div>';
+    echo '<div id="btw'.$lectureno.'" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center">Industry-Institute-Interaction Programme #'.$lectureno.'</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><b>'.$topic.'</b></p>
+        <p class="text-center"><b>'.$speaker.'</b></p>
+        <img class="img-responsive btw-modal-image" src="img/II'.$lectureno.'.JPG"/>
+         '.$content.'
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>';
+    $rows = $rows - 1;
+  }
+  ?>
+
 </div>
 
 <div id="studentvolunteerswrapper" class="row">

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,6 +94,14 @@
                 </li>
                 <li><a href="http://nitdaa.org">Alumni Association (NITDAA)</a></li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <?php
+                if(isset($_SESSION['email'])){
+                    echo '<li><a href="javascript:void(0);" id="profile" data-email="'.$_SESSION['email'].'">Hello, '.$_SESSION['firstname'].'</a></li>';
+                    echo '<li><a href="src/logout.php">Logout</a></li>';
+                }
+                ?>
+           </ul>
         </div>
         </div>
         </nav>

@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $id = $_POST['uid'];
 $imageno = $_POST['imageno'];
 $caption = $_POST['caption'];

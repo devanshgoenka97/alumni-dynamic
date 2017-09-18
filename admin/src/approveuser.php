@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $id = $_POST['id'];
 $sql = "SELECT * from temp_users WHERE id=".$id;
 

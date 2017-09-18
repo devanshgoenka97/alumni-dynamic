@@ -1,7 +1,7 @@
 <?php
 session_start();
 if($_SESSION['admin']!=1){
-  header('Location: logout.php');
+  header('Location: src/logout.php');
 }
 ?><html lang="en">
 <head>
@@ -39,6 +39,7 @@ if($_SESSION['admin']!=1){
         <li><a id="events" href="#">Events</a></li>
         <li><a id="notable" href="#">Notable Alumni</a></li>
         <li><a id="btw" href="#">Beyond The Walls</a></li>
+        <li><a id="iiip" href="#">Industry Institute Interaction</a></li>
         <li><a id="gallery" href="#">Photo Gallery</a></li>
         <li><a id="logout" href="logout.php">Logout</a></li>
       </ul><br>

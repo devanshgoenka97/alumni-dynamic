@@ -26,6 +26,10 @@ $("#gallery").click(function(){
     fetchTable('gallerytable');
 });
 
+$("#iiip").click(function(){
+    fetchTable('iiiptable');
+});
+
 $(document).on('click','#addgeneral',function(){
     $("#table").load("admincms.php .addgeneral");
 });
@@ -44,6 +48,10 @@ $(document).on('click','#addnotable',function(){
 
 $(document).on('click','#addgallery',function(){
     $("#table").load("admincms.php .addgallery");
+});
+
+$(document).on('click','#addiiip',function(){
+    $("#table").load("admincms.php .addiiip");
 });
 
 $(document).on('click','.updategen',function(){
@@ -85,6 +93,16 @@ $(document).on('click','.updatebtw',function(){
 	speaker = $(this).data("speaker");
 	date = $(this).data("date");
     $("#table").load("admincms.php #updatebtw",{"lectureno":lectureno,"id":id,"desc":desc,"topic":topic,"speaker":speaker,"date":date});
+});
+
+$(document).on('click','.updateiiip',function(){
+	lectureno = $(this).data("lectureno");
+	desc = $(this).data("content");
+	id = $(this).data("id");
+	topic = $(this).data("topic");
+	speaker = $(this).data("speaker");
+	date = $(this).data("date");
+    $("#table").load("admincms.php #updateiiip",{"lectureno":lectureno,"id":id,"desc":desc,"topic":topic,"speaker":speaker,"date":date});
 });
 
 $(document).on('click','.approve',function(){

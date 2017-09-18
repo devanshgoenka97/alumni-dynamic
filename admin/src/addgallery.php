@@ -1,7 +1,16 @@
 <?php
-include('../connect.php');
+include('connect.php');
 $imageno = $_POST['imageno'];
 $caption = $_POST['caption'];
+$file = $_FILES['img']['tmp_name'];
+$filesavepath= "/var/www/html/alumni-dynamic/img/IMG_".$imageno.".JPG";
+if(is_uploaded_file($file)){
+	if(move_uploaded_file($file, $filesavepath)){
+	}
+	else{
+		echo '<script type="text/javascript">alert("Problems in Image Upload");</script>';
+	}
+}
 $sql = "INSERT INTO photogallery VALUES(NULL,'".$imageno."','".$caption."')";
 $res = mysqli_query($conn,$sql);
 if($res==true){

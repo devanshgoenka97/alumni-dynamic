@@ -345,3 +345,11 @@
      }
 
 }
+
+/*For Large Desktops*/
+@media (min-width: 1201px) and (max-width: 1386px){
+
+    .navbar-inverse .navbar-nav > li > a{
+      font-size: 13px;
+    }
+}

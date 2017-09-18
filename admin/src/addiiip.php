@@ -6,7 +6,7 @@ $topic = $_POST['topic'];
 $date = $_POST['date'];
 $text = $_POST['desc'];
 $file = $_FILES['img']['tmp_name'];
-$filesavepath= "/var/www/html/alumni-dynamic/img/L".$lectureno.".JPG";
+$filesavepath= "/var/www/html/alumni-dynamic/img/II".$lectureno.".JPG";
 if(is_uploaded_file($file)){
 	if(move_uploaded_file($file, $filesavepath)){
 	}
@@ -14,7 +14,7 @@ if(is_uploaded_file($file)){
 		echo '<script type="text/javascript">alert("Problems in Image Upload");</script>';
 	}
 }
-$sql = "INSERT INTO beyondthewall VALUES(NULL,'".$lectureno."','".$topic."','".$date."','".$speaker."','".$text."')";
+$sql = "INSERT INTO iiiprogramme VALUES(NULL,'".$lectureno."','".$topic."','".$date."','".$speaker."','".$text."')";
 $res = mysqli_query($conn,$sql);
 if($res==true){
 	echo '<script type="text/javascript">alert("Success");</script>';
