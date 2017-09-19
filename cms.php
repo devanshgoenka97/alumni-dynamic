@@ -13,7 +13,7 @@
           <div class="col-md-10 col-md-offset-1">
             <ul class="event-list">
             <?php
-            $sql = "SELECT * from upcomingevents";
+            $sql = "SELECT * from upcomingevents ORDER BY id DESC";
             $result = mysqli_query($conn,$sql);
             $count=3;
             while($count!=0)
@@ -31,7 +31,32 @@
             }
             ?>
             </ul>
-            <a href="#" class="view-link"><p class="text-center view-all">View All</p></a>
+            <a href="#eventsmodal" data-toggle="modal" data-target="#eventsmodal" class="view-link"><p class="text-center view-all">View All</p></a>
+            <div id="eventsmodal" class="modal fade" role="dialog">
+             <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                 <div class="modal-header">
+                     <h4 class="modal-title text-center">Events</h4>
+                </div>
+               <div class="modal-body">
+                <?php
+                    $sql = "SELECT * from upcomingevents ORDER BY id DESC";
+                    $result = mysqli_query($conn,$sql);
+                    while($res = mysqli_fetch_assoc($result)){
+                      $dd = $res['dd'];
+                      $mm = $res['mm'];
+                      $yy = $res['yyyy'];
+                      $text = $res['text'];
+                      echo '<p><b>'.$dd.' '.$mm.', '.$yy.'</b> : '.$text.'</p>';
+                    }
+                ?>
+               </div>
+             <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+             </div>
+           </div>
+         </div>
           </div>
       </div>
          <div class="row">
