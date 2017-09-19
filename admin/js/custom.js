@@ -107,10 +107,11 @@ $(document).on('click','.updateiiip',function(){
 
 $(document).on('click','.deleteiiip',function(){
     id = $(this).data("id");
+    lno = $(this).data("lno");
     $.ajax({
     	type:'POST',
     	url:'src/deleteiiip.php',
-    	data:{'id':id},
+    	data:{'id':id,'lno':lno},
     	success: function(result){
     		alert(result);
     	}
@@ -119,10 +120,11 @@ $(document).on('click','.deleteiiip',function(){
 
 $(document).on('click','.deletebtw',function(){
     id = $(this).data("id");
+    lno = $(this).data("lno");
     $.ajax({
     	type:'POST',
     	url:'src/deletebtw.php',
-    	data:{'id':id},
+    	data:{'id':id,'lno':lno},
     	success: function(result){
     		alert(result);
     	}

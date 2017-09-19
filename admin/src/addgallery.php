@@ -3,7 +3,7 @@ include('connect.php');
 $imageno = $_POST['imageno'];
 $caption = $_POST['caption'];
 $file = $_FILES['img']['tmp_name'];
-$filesavepath= "/var/www/html/alumni-dynamic/img/IMG_".$imageno.".JPG";
+$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/IMG_".$imageno.".JPG";
 if(is_uploaded_file($file)){
 	if(move_uploaded_file($file, $filesavepath)){
 	}

@@ -6,7 +6,7 @@ $topic = $_POST['topic'];
 $date = $_POST['date'];
 $text = $_POST['desc'];
 $file = $_FILES['img']['tmp_name'];
-$filesavepath= "/var/www/html/alumni-dynamic/img/L".$lectureno.".JPG";
+$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/L".$lectureno.".JPG";
 if(is_uploaded_file($file)){
 	if(move_uploaded_file($file, $filesavepath)){
 	}
