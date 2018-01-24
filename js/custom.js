@@ -69,6 +69,14 @@ $("#alumniservices").click(function(){
       fetchSection('alumniservices');
 });
 
+$("#regionalcoordinator").click(function(){
+      fetchSection('regionalcoordinator');
+});
+
+$("#newsletter").click(function(){
+      fetchSection('newsletter');
+});
+
 var scrollpos = window.scrollY;
 var header = document.getElementById("navbar");
 var headerheight = document.getElementById("header").offsetHeight;

@@ -1,10 +1,10 @@
 <?php
 include('connect.php');
-$imageno = $_POST['imageno'];
-$name = $_POST['name'];
+$lectureno = $_POST['imageno'];
+$date = $_POST['date'];
 $text = $_POST['desc'];
 $file = $_FILES['img']['tmp_name'];
-$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/NOTABLE_".$imageno.".JPG";
+$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/NEWS_".$lectureno.".JPG";
 if(is_uploaded_file($file)){
 	if(move_uploaded_file($file, $filesavepath)){
 	}
@@ -12,7 +12,7 @@ if(is_uploaded_file($file)){
 		echo '<script type="text/javascript">alert("Problems in Image Upload");</script>';
 	}
 }
-$sql = "INSERT INTO notablealumni VALUES(NULL,'".$imageno."','".$name."','".$text."')";
+$sql = "INSERT INTO newsletter VALUES(NULL,'".$lectureno."','".$date."','".$text."')";
 $res = mysqli_query($conn,$sql);
 if($res==true){
 	echo '<script type="text/javascript">alert("Success");</script>';

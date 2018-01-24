@@ -429,443 +429,435 @@
                    <tbody>
                       <tr>
                         <td>1965</td>
-                        <td>160</td>
+                        <td>52</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>160</td>
+                        <td>52</td>
                       </tr>
                       <tr>
                         <td>1966</td>
-                        <td>180</td>
+                        <td>105</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>180</td>
+                        <td>105</td>
                       </tr>
                       <tr>
                         <td>1967</td>
-                        <td>180</td>
-                        <td>15</td>
+                        <td>167</td>
                         <td></td>
                         <td></td>
-                        <td>195</td>
+                        <td></td>
+                        <td>167</td>
                       </tr>
                       <tr>
                         <td>1968</td>
-                        <td>210</td>
-                        <td>25</td>
+                        <td>189</td>
                         <td></td>
                         <td></td>
-                        <td>235</td>
+                        <td></td>
+                        <td>189</td>
                       </tr>
                       <tr>
                         <td>1969</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>207</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
+                        <td></td>
+                        <td>207</td>
                       </tr>
                       <tr>
                         <td>1970</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>226</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
+                        <td></td>
+                        <td>226</td>
                       </tr>
                       <tr>
                         <td>1971</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>169</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
+                        <td></td>
+                        <td>169</td>
                       </tr>
                       <tr>
                         <td>1972</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>119</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
-                      </tr>
-                      <tr>
-                        <td>1967</td>
-                        <td>180</td>
-                        <td>15</td>
                         <td></td>
-                        <td></td>
-                        <td>195</td>
+                        <td>119</td>
                       </tr>
                       <tr>
                         <td>1973</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>107</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
+                        <td></td>
+                        <td>107</td>
                       </tr>
                       <tr>
                         <td>1974</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>136</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
+                        <td></td>
+                        <td>136</td>
                       </tr>
                       <tr>
                         <td>1975</td>
-                        <td>210</td>
-                        <td>50</td>
+                        <td>144</td>
                         <td></td>
                         <td></td>
-                        <td>260</td>
+                        <td></td>
+                        <td>144</td>
                       </tr>
                       <tr>
                         <td>1976</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>113</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>113</td>
                       </tr>
                       <tr>
                         <td>1977</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>106</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>106</td>
                       </tr>
                       <tr>
                         <td>1978</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>172</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>172</td>
                       </tr>
                       <tr>
                         <td>1979</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>224</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>224</td>
                       </tr>
                       <tr>
                         <td>1980</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>155</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>155</td>
                       </tr>
                       <tr>
                         <td>1981</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>234</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>234</td>
                       </tr>
                       <tr>
                         <td>1982</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>211</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>211</td>
                       </tr>
                       <tr>
                         <td>1983</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>225</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>225</td>
                       </tr>
                       <tr>
                         <td>1984</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>268</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>268</td>
                       </tr>
                       <tr>
                         <td>1985</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>256</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>256</td>
                       </tr>
                       <tr>
                         <td>1986</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>244</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>244</td>
                       </tr>
                       <tr>
                         <td>1987</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>255</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>255</td>
                       </tr>
                       <tr>
                         <td>1988</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>272</td>
                         <td></td>
                         <td></td>
-                        <td>300</td>
+                        <td></td>
+                        <td>272</td>
                       </tr>
                       <tr>
                         <td>1989</td>
-                        <td>250</td>
-                        <td>50</td>
+                        <td>298</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>298</td>
+                      </tr>
+                      <tr>
+                        <td>1990</td>
+                        <td>276</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>276</td>
+                      </tr>
+                      <tr>
+                        <td>1991</td>
+                        <td>299</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>299</td>
+                      </tr>
+                      <tr>
+                        <td>1992</td>
+                        <td>287</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>287</td>
+                      </tr>
+                      <tr>
+                        <td>1993</td>
+                        <td>266</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>266</td>
+                      </tr>
+                      <tr>
+                        <td>1994</td>
+                        <td>322</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>322</td>
+                      </tr>
+                      <tr>
+                        <td>1995</td>
+                        <td>317</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>317</td>
+                      </tr>
+                      <tr>
+                        <td>1996</td>
+                        <td>313</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>313</td>
+                      </tr>
+                      <tr>
+                        <td>1997</td>
+                        <td>320</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>320</td>
+                      </tr>
+                      <tr>
+                        <td>1998</td>
+                        <td>335</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>335</td>
+                      </tr>
+                      <tr>
+                        <td>1999</td>
+                        <td>312</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>312</td>
+                      </tr>
+                      <tr>
+                        <td>2000</td>
+                        <td>300</td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td>300</td>
                       </tr>
                       <tr>
-                        <td>1990</td>
-                        <td>310</td>
-                        <td>50</td>
-                        <td></td>
-                        <td></td>
-                        <td>360</td>
-                      </tr>
-                      <tr>
-                        <td>1991</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>265</td>
-                      </tr>
-                      <tr>
-                        <td>1992</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1993</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1994</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1995</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1996</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1997</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1998</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>1999</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
-                        <td>2000</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td></td>
-                        <td></td>
-                        <td>365</td>
-                      </tr>
-                      <tr>
                         <td>2001</td>
-                        <td>310</td>
-                        <td>55</td>
+                        <td>319</td>
                         <td></td>
                         <td></td>
-                        <td>365</td>
+                        <td></td>
+                        <td>319</td>
                       </tr>
                       <tr>
                         <td>2002</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td>55</td>
+                        <td>323</td>
                         <td></td>
-                        <td>420</td>
+                        <td></td>
+                        <td></td>
+                        <td>323</td>
                       </tr>
                       <tr>
                         <td>2003</td>
-                        <td>310</td>
-                        <td>55</td>
-                        <td>55</td>
+                        <td>335</td>
                         <td></td>
-                        <td>420</td>
+                        <td></td>
+                        <td></td>
+                        <td>335</td>
                       </tr>
                       <tr>
                         <td>2004</td>
-                        <td>350</td>
-                        <td>55</td>
-                        <td>115</td>
-                        <td>10</td>
-                        <td>530</td>
+                        <td>391</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>391</td>
                       </tr>
                       <tr>
                         <td>2005</td>
-                        <td>400</td>
-                        <td>55</td>
-                        <td>115</td>
-                        <td>10</td>
-                        <td>580</td>
+                        <td>431</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>431</td>
                       </tr>
                       <tr>
                         <td>2006</td>
-                        <td>450</td>
-                        <td>55</td>
-                        <td>115</td>
-                        <td>10</td>
-                        <td>630</td>
+                        <td>379</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>379</td>
                       </tr>
                       <tr>
                         <td>2007</td>
-                        <td>450</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>10</td>
-                        <td>700</td>
+                        <td>367</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>367</td>
                       </tr>
                       <tr>
                         <td>2008</td>
-                        <td>500</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>10</td>
-                        <td>750</td>
+                        <td>395</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>395</td>
                       </tr>
                       <tr>
                         <td>2009</td>
-                        <td>550</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>25</td>
-                        <td>815</td>
+                        <td>487</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>487</td>
                       </tr>
                       <tr>
                         <td>2010</td>
-                        <td>600</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>25</td>
-                        <td>865</td>
+                        <td>489</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>489</td>
                       </tr>
                       <tr>
                         <td>2011</td>
-                        <td>650</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>25</td>
-                        <td>915</td>
+                        <td>498</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>498</td>
                       </tr>
                       <tr>
                         <td>2012</td>
-                        <td>700</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>25</td>
-                        <td>965</td>
+                        <td>592</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>592</td>
                       </tr>
                       <tr>
                         <td>2013</td>
-                        <td>750</td>
-                        <td>125</td>
-                        <td>115</td>
-                        <td>40</td>
-                        <td>1030</td>
+                        <td>688</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>688</td>
                       </tr>
                       <tr>
                         <td>2014</td>
-                        <td>800</td>
-                        <td>450</td>
-                        <td>115</td>
-                        <td>40</td>
-                        <td>1405</td>
+                        <td>743</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>743</td>
                       </tr>
                       <tr>
                         <td>2015</td>
-                        <td>850</td>
-                        <td>450</td>
-                        <td>115</td>
-                        <td>40</td>
-                        <td>1455</td>
+                        <td>764</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>764</td>
                       </tr>
                       <tr>
                         <td>2016</td>
-                        <td>900</td>
-                        <td>450</td>
-                        <td>115</td>
-                        <td>65</td>
-                        <td>1530</td>
+                        <td>833</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>833</td>
                       </tr>
                       <tr>
                         <td>2017</td>
-                        <td>950</td>
-                        <td>450</td>
-                        <td>115</td>
-                        <td>60</td>
-                        <td>1580</td>
+                        <td>806</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>806</td>
                       </tr>
                       <tr>
                         <td><b>Total</b></td>
-                        <td><b>18940</b></td>
-                        <td><b>4695</b></td>
-                        <td><b>1720</b></td>
-                        <td><b>400</b></td>
-                        <td><b>25755</b></td>
+                        <td><b>16842</b></td>
+                        <td><b></b></td>
+                        <td><b></b></td>
+                        <td><b></b></td>
+                        <td><b>16842</b></td>
                       </tr>
                    </tbody>
               </table>
@@ -1166,10 +1158,10 @@
   </div>
 
   <?php
-  $sql = "SELECT * from beyondthewall";
+  $sql = "SELECT * from beyondthewall order by date desc";
   $result = mysqli_query($conn,$sql);
   $count = 1;
-  while($count<=7){
+  while($count<=$result->num_rows){
     $res = mysqli_fetch_assoc($result);
     $lectureno = $res['lectureno'];
     $topic = $res['topic'];
@@ -1419,5 +1411,298 @@ while($res = mysqli_fetch_assoc($result)){
       ?>
       </div> 
   </div>
+
+</div>
+
+<div id="regionalcoordinatorwrapper" class="row">
+
+  <div class="event-description col-md-10 col-md-offset-1 shadow">
+      <p class="parallax-text text-center">Regional Coordinators</p>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <hr>
+        </div>
+      </div> 
+      <div class="event-description-text text-center">
+      <?php 
+      $sql = "SELECT * from general where identifier='regionalcoordinator'";
+      $result = mysqli_query($conn,$sql);
+      $res = mysqli_fetch_assoc($result);
+      echo $res['content'];
+      ?>
+      <br>
+      <br>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 table-responsive">
+              <table class="table table-striped">
+                    <thead>
+                      <tr>
+                         <th>Zone</th>
+                         <th>State</th>
+                         <th>City</th>
+                         <th>Regional Coordinator</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                       <td rowspan="8">North</td>
+                       <td>Delhi</td>
+                       <td>New Delhi</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=new_delhi">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Uttar Pradesh</td>
+                       <td>Noida</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=noida">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Haryana</td>
+                       <td>Gurgaon</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=gurgaon">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td rowspan="2">Uttarakhand</td>
+                       <td>Roorkee/Haridwar</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=haridwar">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Pantnagar</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=pantnagar">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Himachal Pradesh</td>
+                       <td>Shimla</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=shimla">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Jammu & Kashmir</td>
+                       <td>Jammu</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=jammu">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Punjab</td>
+                       <td>Chandigarh</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=chandigarh">Interested</a></td>
+                      </tr>
+
+                      <tr>
+                       <td rowspan="5">South</td>
+                       <td>Andhra Pradesh</td>
+                       <td>Vizag</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=vizag">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Karnataka</td>
+                       <td>Bangalore</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=bangalore">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Kerala</td>
+                       <td>Thiruvanthapuram</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=thiruvanthapuram">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Tamil Nadu</td>
+                       <td>Chennai</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=chennai">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Telengana</td>
+                       <td>Hyderabad</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=hyderabad">Interested</a></td>
+                      </tr>
+
+                      <tr>
+                       <td rowspan="8">West</td>
+                       <td rowspan="2">Maharashtra</td>
+                       <td>Pune</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=pune">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Mumbai</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=mumbai">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td rowspan="4">Gujarat</td>
+                       <td>Surat</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=surat">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Ahmedabad</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=ahmedabad">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Jamnagar</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=jamnagar">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Vadodara</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=vadodara">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Goa</td>
+                       <td>Goa</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=goa">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Rajasthan</td>
+                       <td>Jaipur</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=jaipur">Interested</a></td>
+                      </tr>
+
+                       <tr>
+                       <td rowspan="11">East</td>
+                       <td rowspan="3">West Bengal</td>
+                       <td>Kolkata</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=kolkata">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Durgapur</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=durgapur">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Asansol</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=asansol">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td rowspan="4">Jharkhand</td>
+                       <td>Bokaro</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=bokaro">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Ranchi</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=ranchi">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Dhanbad</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=dhanbad">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Jamshedpur</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=jamshedpur">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Bihar</td>
+                       <td>Patna</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=patna">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td rowspan="2">Odisha</td>
+                       <td>Rourkela</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=rourkela">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Bhubaneshwar</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=bhubaneshwar">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Andaman</td>
+                       <td>Port Blair</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=port_blair">Interested</a></td>
+                      </tr>
+
+                      <tr>
+                       <td rowspan="3">Central</td>
+                       <td rowspan="2">Madhya Pradesh</td>
+                       <td>Bhopal</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=bhopal">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Indore</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=indore">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Chhatisgarh</td>
+                       <td>Raipur/Bhilai</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=raipur">Interested</a></td>
+                      </tr>
+
+                       <tr>
+                       <td rowspan="3">North East</td>
+                       <td>Assam</td>
+                       <td>Guwahati</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=guwahati">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Tripura</td>
+                       <td>Agartala</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=agartala">Interested</a></td>
+                      </tr>
+                      <tr>
+                       <td>Manipur</td>
+                       <td>Imphal</td>
+                       <td><a class="btn btn-success" href="src/region.php?city=imphal">Interested</a></td>
+                      </tr>
+
+                    </tbody>
+              </table>
+            </div>
+        </div>
+      </div> 
+  </div> 
+
+
+
+</div>
+
+<div id="newsletterwrapper" class="row">
+
+  <div class="event-description col-md-10 col-md-offset-1 shadow">
+      <p class="parallax-text text-center">E - Newsletter</p>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <hr>
+        </div>
+      </div> 
+      <div class="event-description-text text-center">
+      <?php 
+      $sql = "SELECT * from general where identifier='newsletter'";
+      $result = mysqli_query($conn,$sql);
+      $res = mysqli_fetch_assoc($result);
+      echo $res['content'];
+      ?>
+      </div> 
+  </div> 
+
+  <?php
+  $sql = "SELECT * from newsletter order by date desc";
+  $result = mysqli_query($conn,$sql);
+  $count = 1;
+  while($count<=$result->num_rows){
+    $res = mysqli_fetch_assoc($result);
+    $lectureno = $res['lectureno'];
+    $date = $res['date'];
+    $content = $res['content'];
+    echo '<div class="btw-label col-md-10 col-md-offset-1">
+      <div class="row">
+        <img src="img/NEWS_'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
+        <div class="col-md-8 btw-text shadow">
+            <h5>Date: '.$date.'</h5>
+        </div>
+      </div>
+      <a href="#news'.$lectureno.'" data-toggle="modal" data-target="#news'.$lectureno.'" class="read-more">
+        Read More
+      </a>
+  </div>';
+    echo '<div id="news'.$lectureno.'" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center">E - Newsletter #'.$lectureno.'</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive btw-modal-image" src="img/NEWS_'.$lectureno.'.JPG"/>
+         '.$content.'
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>';
+    $count = $count + 1;
+  }
+  ?>
 
 </div>

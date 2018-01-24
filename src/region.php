@@ -11,23 +11,22 @@ session_start();
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/mdb.css">
-        <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/content.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/mdb.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/content.css">
+        <link rel="stylesheet" href="../css/responsive.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/loader.js"></script>
 	</head>
     
     <body>
         <div id="overlay">
-            <img src="img/loader.gif" id="loader" />
+            <img src="../img/loader.gif" id="loader" />
         </div>
     	<header class="header container-fluid" id="header">
             <div class="row header-text">
-            <img class="logo col-md-1" src="img/blue-logo.png"/>
+            <img class="logo col-md-1" src="../img/blue-logo.png"/>
             <div class="primary-header-text col-md-5">
             <h3 class="primary-text">
                 National Institute of Technology Durgapur
@@ -46,7 +45,7 @@ session_start();
             </div>
             </div>
         
-        <div class="nav-wrapper">
+<!--         <div class="nav-wrapper">
         <nav class="navbar navbar-inverse" id="navbar">
             <div class="container-fluid no-left-right-padding">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -100,19 +99,33 @@ session_start();
                 <?php
                 if(isset($_SESSION['email'])){
                     echo '<li><a href="javascript:void(0);" id="profile" data-email="'.$_SESSION['email'].'">Hello, '.$_SESSION['firstname'].'</a></li>';
-                    echo '<li><a href="src/logout.php">Logout</a></li>';
+                    echo '<li><a href="../src/logout.php">Logout</a></li>';
                 }
                 ?>
            </ul>
         </div>
         </div>
         </nav>
-        </div>
+        </div> -->
 
     	</header>
 
         <section class="container-fluid content" id="fillable">
-        </section>
+        	<?php
+$city = $_GET['city'];
+?>
+<form method="post" action="add_region.php">
+   <input type="hidden" name="city" value="<?php echo $city; ?>" />
+   Name:
+   <input type="text" name="name" class="form-control" required/>
+   <br/>
+   <br/>
+   Contact:
+   <input type="number" name="contact" class="form-control" required/>
+   <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+</section>
 
         <section class="container-fluid bottom-nav">
             <div class="row">
@@ -135,5 +148,5 @@ session_start();
         <footer class="footer container-fluid text-center foot">Copyright © 2017. All Rights Reserved. National Institute of Technology, Durgapur.
          </footer>
     </body>
-    <script src="js/custom.js"></script>
+    <script src="../js/custom.js"></script>
 </html>

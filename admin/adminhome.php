@@ -40,7 +40,9 @@ if(!isset($_SESSION['admin'])){
         <li><a id="notable" href="#">Notable Alumni</a></li>
         <li><a id="btw" href="#">Beyond The Walls</a></li>
         <li><a id="iiip" href="#">Industry Institute Interaction</a></li>
+        <li><a id="newsletter" href="#">E - Newsletter</a></li>
         <li><a id="gallery" href="#">Photo Gallery</a></li>
+        <li><a id="region" href="#">Regional Coordinator Applications</a></li>
         <li><a id="logout" href="src/logout.php">Logout</a></li>
       </ul><br>
     </div>
