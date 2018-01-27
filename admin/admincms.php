@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['admin']!=1){
+if(!isset($_SESSION['admin'])){
   header('Location: src/logout.php');
 }
 include('src/connect.php');
@@ -71,6 +71,7 @@ include('src/connect.php');
             <td>'.$id.'</td>
             <td>'.$content.'</td>
             <td><a class="btn btn-default updategen" href="javascript:void(0);" data-uid="'.$uid.'" data-id="'.$id.'" data-content="'.$content.'">Update</a></td>
+            <td><a class="btn btn-default deletegen" href="javascript:void(0);" data-uid="'.$uid.'">Delete</a></td>
             </tr>';
             $count = $count - 1;
             }
@@ -160,7 +161,7 @@ $desc = $_GET['desc'];
          <input type="text" name="name" style="width:100%;" value="<?php echo $content;?>">
          <br>
          <label>Description</label>
-         <input type="text" name="desc" style="width:100%;" value="<?php echo $desc;?>">
+         <textarea rows="6" name="desc" style="width:100%;" ><?php echo $desc;?></textarea>
          <br>
          <input type="hidden" name="uid" style="width:100%;" value="<?php echo $uid;?>">
          <input type="submit">
@@ -215,6 +216,7 @@ $desc = $_GET['desc'];
             <td>'.$yy.'</td>
             <td>'.$text.'</td>
             <td><a class="btn btn-default updateevents" href="javascript:void(0);" data-id="'.$uid.'" data-dd="'.$dd.'" data-mm="'.$mm.'" data-yy="'.$yy.'" data-text="'.$text.'">Update</a></td>
+            <td><a class="btn btn-default deleteevents" href="javascript:void(0);" data-id="'.$uid.'">Delete</a></td>
             </tr>';
             $count = $count - 1;
           }
@@ -483,6 +485,7 @@ $date = $_POST['date'];
             <td>'.$id.'</td>
             <td>'.$content.'</td>
             <td><a class="btn btn-default updategallery" href="javascript:void(0);" data-imageno="'.$id.'" data-caption="'.$content.'" data-id="'.$uid.'">Update</a></td>
+            <td><a class="btn btn-default deletegallery" href="javascript:void(0);" data-id="'.$uid.'" data-imageno="'.$id.'">Delete</a></td>
             </tr>';
             $count = $count - 1;
           }
@@ -516,6 +519,72 @@ $id = $_POST['id'];
          <br>
          <label>Caption</label>
          <input type="text" name="caption" id="gallery_caption" style="width:100%;">
+         <br>
+         <label>Image</label>
+         <input type="file" name="img" value="Choose an image">
+         <br>
+         <input type="submit">
+ </form>
+</div>
+
+<div class="well" id="volunteerstable">
+        <h3 class="text-center">Student Volunteers</h3>
+        <a class="btn btn-default" id="addvolunteer">Add</a>
+        <table class="table table-striped table-responsive">
+        <thead>
+          <tr>
+          <th class='text-center'>Image No</th>
+          <th class='text-center'>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          $sql = "SELECT * from volunteers";
+          $result = mysqli_query($conn,$sql);
+          $count = mysqli_num_rows($result);
+          while($count>0){
+            $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
+            $id = $res['imageno'];
+            $content = $res['caption'];
+            echo '<tr>
+            <td>'.$id.'</td>
+            <td>'.$content.'</td>
+            <td><a class="btn btn-default updatevolunteer" href="javascript:void(0);" data-imageno="'.$id.'" data-caption="'.$content.'" data-id="'.$uid.'">Update</a></td>
+            <td><a class="btn btn-default deletevolunteer" href="javascript:void(0);" data-id="'.$uid.'" data-imageno="'.$id.'">Delete</a></td>
+            </tr>';
+            $count = $count - 1;
+          }
+          ?>
+        </tbody>
+        </table>
+</div>
+
+<div class="well" id="updatevolunteer">
+<?php
+$imageno = $_POST['imageno'];
+$caption = $_POST['caption'];
+$id = $_POST['id'];
+?>
+<form method="post" class="col-md-10" action="src/updatevolunteer.php">
+         <label class="text-center">Image No</label>
+         <input type="text" name="imageno" style="width:100%;" value="<?php echo $imageno;?>">
+         <br>
+         <label>Name</label>
+         <input type="text" name="caption" style="width:100%;" value="<?php echo $caption;?>">
+         <br>
+         <input type="hidden" name="uid" id="gallery_id" style="width:100%;" value="<?php echo $id;?>">
+         <input type="submit">
+ </form>
+</div>
+
+<div class="well addvolunteer">
+<form method="post" class="col-md-10" action="src/addvolunteer.php" enctype="multipart/form-data">
+         <label class="text-center">Image No</label>
+         <input type="text" name="imageno" style="width:100%;">
+         <br>
+         <label>Name</label>
+         <input type="text" name="caption" style="width:100%;">
          <br>
          <label>Image</label>
          <input type="file" name="img" value="Choose an image">
@@ -631,4 +700,98 @@ $date = $_POST['date'];
           ?>
         </tbody>
         </table>
+</div>
+
+<div class="well" id="statstable">
+        <h3 class="text-center">Alumni At A Glance</h3>
+        <a class="btn btn-default" id="addstats">Add</a>
+        <table class="table table-striped table-responsive">
+        <thead>
+          <tr>
+          <th class='text-center'>Year</th>
+          <th class='text-center'>Btech</th>
+          <th class="text-center">Mtech</th>
+          <th class="text-center">Others</th>
+          <th class="text-center">PhD</th>
+          <th class="text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          $sql = "SELECT * from stats ORDER BY id";
+          $result = mysqli_query($conn,$sql);
+          $count = mysqli_num_rows($result);
+          while($count>0){
+            $res = mysqli_fetch_assoc($result);
+            $uid = $res['id'];
+            $year = $res['year'];
+            $btech = $res['btech'];
+            $mtech = $res['mtech'];
+            $others = $res['others'];
+            $phd = $res['phd'];
+            echo '<tr>
+            <td>'.$year.'</td>
+            <td>'.$btech.'</td>
+            <td>'.$mtech.'</td>
+            <td>'.$others.'</td>
+            <td>'.$phd.'</td>
+            <td><a class="btn btn-default updatestats" href="javascript:void(0);" data-id="'.$uid.'" data-year="'.$year.'" data-btech="'.$btech.'" data-mtech="'.$mtech.'" data-others="'.$others.'" data-phd="'.$phd.'">Update</a></td>
+            <td><a class="btn btn-default deletestats" href="javascript:void(0);" data-id="'.$uid.'">Delete</a></td> 
+            </tr>';
+            $count = $count - 1;
+            }
+          ?>
+        </tbody>
+        </table>
+</div>
+
+<div class="well" id="updatestats">
+<?php
+$id = $_POST['id'];
+$year = $_POST['year'];
+$btech = $_POST['btech'];
+$mtech = $_POST['mtech'];
+$others = $_POST['others'];
+$phd = $_POST['phd'];
+?>
+<form method="post" class="col-md-10" action="src/updatestats.php">
+         <label class="text-center">Year</label>
+         <input type="text" name="year" style="width:100%;" value="<?php echo $year;?>" />
+         <br>
+         <label>B.Tech</label>
+         <input type="number"  name="btech" style="width:100%;" value="<?php echo $btech;?>" />
+         <br>
+         <label>M.Tech</label>
+         <input type="number"  name="mtech" style="width:100%;" value="<?php echo $mtech;?>" />
+         <br>
+         <label>Others</label>
+         <input type="number"  name="others" style="width:100%;" value="<?php echo $others;?>" />
+         <br>
+         <label>PHD</label>
+         <input type="number"  name="phd" style="width:100%;" value="<?php echo $phd;?>" />
+         <br>
+         <input type="hidden" name="id" style="width:100%;" value="<?php echo $id;?>">
+         <input type="submit">
+ </form>
+</div>
+
+<div class="well addstats">
+<form method="post" class="col-md-10" action="src/addstats.php">
+         <label class="text-center">Year</label>
+         <input type="text" name="year" style="width:100%;" value="">
+         <br>
+         <label>B.Tech</label>
+         <input type="number"  name="btech" style="width:100%;" value="" />
+         <br>
+         <label>M.Tech</label>
+         <input type="number"  name="mtech" style="width:100%;" value="" />
+         <br>
+         <label>Others</label>
+         <input type="number"  name="others" style="width:100%;" value="" />
+         <br>
+         <label>PHD</label>
+         <input type="number"  name="phd" style="width:100%;" value="" />
+         <br>
+         <input type="submit">
+ </form>
 </div>

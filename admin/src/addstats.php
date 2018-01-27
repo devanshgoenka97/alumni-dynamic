@@ -1,10 +1,11 @@
 <?php
 include('connect.php');
-$dd = $_POST['dd'];
-$mm = $_POST['mm'];
-$yy = $_POST['yy'];
-$text = $_POST['desc'];
-$sql = "INSERT INTO upcomingevents VALUES(NULL,'".$dd."','".$mm."','".$yy."','".$text."')";
+$year = $_POST['year'];
+$btech = $_POST['btech'];
+$mtech = $_POST['mtech'];
+$others = $_POST['others'];
+$phd = $_POST['phd'];
+$sql = "INSERT INTO stats VALUES(NULL,'".$year."','".$btech."','".$mtech."','".$others."','".$phd."')";
 $res = mysqli_query($conn,$sql);
 if($res==true){
 	echo '<script type="text/javascript">alert("Success");</script>';

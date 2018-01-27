@@ -283,6 +283,30 @@
 
     </div>
     </div>
+
+    <div class="item">
+      <div class="row">
+
+      <?php
+       $count=0;
+       while($count!=4){
+        $res = mysqli_fetch_assoc($result);
+        $imageno = $res['imageno'];
+        $name = $res['name'];
+        echo '<div class="col-md-3">
+      <div class="gallery shadow">
+  <a target="_blank" href="img/NOTABLE_'.$imageno.'.JPG">
+    <img src="img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
+  </a>
+  <div class="desc">'.$name.'</div>
+</div>
+    </div>';
+        $count=$count+1;
+      }
+      ?>
+
+    </div>
+    </div>
   </div>
   <a class="left carousel-control" href="#notablealumniCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -427,437 +451,46 @@
                       </tr>
                    </thead>
                    <tbody>
-                      <tr>
-                        <td>1965</td>
-                        <td>52</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>52</td>
-                      </tr>
-                      <tr>
-                        <td>1966</td>
-                        <td>105</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>105</td>
-                      </tr>
-                      <tr>
-                        <td>1967</td>
-                        <td>167</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>167</td>
-                      </tr>
-                      <tr>
-                        <td>1968</td>
-                        <td>189</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>189</td>
-                      </tr>
-                      <tr>
-                        <td>1969</td>
-                        <td>207</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>207</td>
-                      </tr>
-                      <tr>
-                        <td>1970</td>
-                        <td>226</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>226</td>
-                      </tr>
-                      <tr>
-                        <td>1971</td>
-                        <td>169</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>169</td>
-                      </tr>
-                      <tr>
-                        <td>1972</td>
-                        <td>119</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>119</td>
-                      </tr>
-                      <tr>
-                        <td>1973</td>
-                        <td>107</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>107</td>
-                      </tr>
-                      <tr>
-                        <td>1974</td>
-                        <td>136</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>136</td>
-                      </tr>
-                      <tr>
-                        <td>1975</td>
-                        <td>144</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>144</td>
-                      </tr>
-                      <tr>
-                        <td>1976</td>
-                        <td>113</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>113</td>
-                      </tr>
-                      <tr>
-                        <td>1977</td>
-                        <td>106</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>106</td>
-                      </tr>
-                      <tr>
-                        <td>1978</td>
-                        <td>172</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>172</td>
-                      </tr>
-                      <tr>
-                        <td>1979</td>
-                        <td>224</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>224</td>
-                      </tr>
-                      <tr>
-                        <td>1980</td>
-                        <td>155</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>155</td>
-                      </tr>
-                      <tr>
-                        <td>1981</td>
-                        <td>234</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>234</td>
-                      </tr>
-                      <tr>
-                        <td>1982</td>
-                        <td>211</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>211</td>
-                      </tr>
-                      <tr>
-                        <td>1983</td>
-                        <td>225</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>225</td>
-                      </tr>
-                      <tr>
-                        <td>1984</td>
-                        <td>268</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>268</td>
-                      </tr>
-                      <tr>
-                        <td>1985</td>
-                        <td>256</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>256</td>
-                      </tr>
-                      <tr>
-                        <td>1986</td>
-                        <td>244</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>244</td>
-                      </tr>
-                      <tr>
-                        <td>1987</td>
-                        <td>255</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>255</td>
-                      </tr>
-                      <tr>
-                        <td>1988</td>
-                        <td>272</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>272</td>
-                      </tr>
-                      <tr>
-                        <td>1989</td>
-                        <td>298</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>298</td>
-                      </tr>
-                      <tr>
-                        <td>1990</td>
-                        <td>276</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>276</td>
-                      </tr>
-                      <tr>
-                        <td>1991</td>
-                        <td>299</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>299</td>
-                      </tr>
-                      <tr>
-                        <td>1992</td>
-                        <td>287</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>287</td>
-                      </tr>
-                      <tr>
-                        <td>1993</td>
-                        <td>266</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>266</td>
-                      </tr>
-                      <tr>
-                        <td>1994</td>
-                        <td>322</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>322</td>
-                      </tr>
-                      <tr>
-                        <td>1995</td>
-                        <td>317</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>317</td>
-                      </tr>
-                      <tr>
-                        <td>1996</td>
-                        <td>313</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>313</td>
-                      </tr>
-                      <tr>
-                        <td>1997</td>
-                        <td>320</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>320</td>
-                      </tr>
-                      <tr>
-                        <td>1998</td>
-                        <td>335</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>335</td>
-                      </tr>
-                      <tr>
-                        <td>1999</td>
-                        <td>312</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>312</td>
-                      </tr>
-                      <tr>
-                        <td>2000</td>
-                        <td>300</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>300</td>
-                      </tr>
-                      <tr>
-                        <td>2001</td>
-                        <td>319</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>319</td>
-                      </tr>
-                      <tr>
-                        <td>2002</td>
-                        <td>323</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>323</td>
-                      </tr>
-                      <tr>
-                        <td>2003</td>
-                        <td>335</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>335</td>
-                      </tr>
-                      <tr>
-                        <td>2004</td>
-                        <td>391</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>391</td>
-                      </tr>
-                      <tr>
-                        <td>2005</td>
-                        <td>431</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>431</td>
-                      </tr>
-                      <tr>
-                        <td>2006</td>
-                        <td>379</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>379</td>
-                      </tr>
-                      <tr>
-                        <td>2007</td>
-                        <td>367</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>367</td>
-                      </tr>
-                      <tr>
-                        <td>2008</td>
-                        <td>395</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>395</td>
-                      </tr>
-                      <tr>
-                        <td>2009</td>
-                        <td>487</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>487</td>
-                      </tr>
-                      <tr>
-                        <td>2010</td>
-                        <td>489</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>489</td>
-                      </tr>
-                      <tr>
-                        <td>2011</td>
-                        <td>498</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>498</td>
-                      </tr>
-                      <tr>
-                        <td>2012</td>
-                        <td>592</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>592</td>
-                      </tr>
-                      <tr>
-                        <td>2013</td>
-                        <td>688</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>688</td>
-                      </tr>
-                      <tr>
-                        <td>2014</td>
-                        <td>743</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>743</td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td>764</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>764</td>
-                      </tr>
-                      <tr>
-                        <td>2016</td>
-                        <td>833</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>833</td>
-                      </tr>
-                      <tr>
-                        <td>2017</td>
-                        <td>806</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>806</td>
-                      </tr>
+                      <?php 
+                      $sql = "SELECT * from stats ORDER BY id";
+                      $result = mysqli_query($conn,$sql);
+                      $count = mysqli_num_rows($result);
+                      $global_total=0;
+                      $btech_total=0;
+                      $mtech_total=0;
+                      $others_total=0;
+                      $phd_total=0;
+                      while($count>0){
+                          $res = mysqli_fetch_assoc($result);
+                          $year = $res['year'];
+                          $btech = $res['btech'];
+                          $mtech = $res['mtech'];
+                          $others = $res['others'];
+                          $phd = $res['phd'];
+                          $total = $btech+$mtech+$others+$phd;
+                          echo '<tr>
+                          <td>'.$year.'</td>
+                          <td>'.$btech.'</td>
+                          <td>'.$mtech.'</td>
+                          <td>'.$others.'</td>
+                          <td>'.$phd.'</td>
+                          <td>'.$total.'</td>
+                          </tr>';
+                          $global_total+=$total;
+                          $btech_total+=$btech;
+                          $mtech_total+=$mtech;
+                          $others_total+=$others;
+                          $phd_total+=$phd;
+                          $count-=1;
+                      }
+                      ?>
                       <tr>
                         <td><b>Total</b></td>
-                        <td><b>16842</b></td>
-                        <td><b></b></td>
-                        <td><b></b></td>
-                        <td><b></b></td>
-                        <td><b>16842</b></td>
+                        <td><b><?php echo $btech_total;?></b></td>
+                        <td><b><?php echo $mtech_total;?></b></td>
+                        <td><b><?php echo $others_total;?></b></td>
+                        <td><b><?php echo $phd_total;?></b></td>
+                        <td><b><?php echo $global_total;?></b></td>
                       </tr>
                    </tbody>
               </table>
@@ -1389,7 +1022,23 @@ while($res = mysqli_fetch_assoc($result)){
       echo $res['content'];
       ?>
       </div> 
-  </div>
+
+      <?php
+      $sql = "SELECT * from volunteers";
+      $result = mysqli_query($conn,$sql);
+      while($res = mysqli_fetch_assoc($result)){
+       $imageno = $res['imageno'];
+       $caption = $res['caption'];
+       echo '<div class="gallery shadow">
+       <a target="_blank" href="img/VOLUNTEER_'.$imageno.'.JPG">
+       <img src="img/VOLUNTEER_'.$imageno.'.JPG" width="300" height="200">
+       </a>
+      <div class="desc">'.$caption.'</div>
+      </div>';
+      }
+      ?>
+
+   </div>
 
 </div>
 

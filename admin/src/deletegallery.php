@@ -1,10 +1,10 @@
 <?php
 include('connect.php');
 $id = $_POST['id'];
-$lno = $_POST['lno'];
-$sql = "DELETE FROM newsletter WHERE id=".$id;
-$image = dirname(dirname(dirname(__FILE__)))."/img/NEWS_".$lno.".JPG";
+$imageno = $_POST['imageno'];
+$sql = "DELETE FROM photogallery WHERE id=".$id;
 $result = mysqli_query($conn,$sql);
+$image = dirname(dirname(dirname(__FILE__)))."/img/IMG_".$imageno.".JPG";
 if($result==true){
 	echo "Success";
 	unlink($image);

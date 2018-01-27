@@ -82,7 +82,7 @@ session_start();
                     </ul>
                 </li>
                 <li><a href="javascript:void(0);" id="alumniawards">Alumni Achievements</a></li>
-                <li><a href="javascript:void(0);" id="givingback">Giving Back</a></li>
+                <li><a target="_new" href="Giving_back_webpage_v2.pdf" id="givingback">Giving Back</a></li>
                 <li><a href="javascript:void(0);" id="alumniservices">Alumni Services</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Students' Alumni Body</a>
@@ -94,7 +94,7 @@ session_start();
                 </li>
                 <li><a href="javascript:void(0);" id="regionalcoordinator">Regional Coordinators</a></li>
                 <li><a href="javascript:void(0);" id="newsletter">E-Newsletter</a></li>
-                <li><a href="http://nitdaa.org">NITDAA</a></li>
+                <li><a target="_new" href="http://nitdaa.org">NITDAA</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php
@@ -132,7 +132,7 @@ session_start();
             </div>
         </section>
 
-        <footer class="footer container-fluid text-center foot">Copyright © 2017. All Rights Reserved. National Institute of Technology, Durgapur.
+        <footer class="footer container-fluid text-center foot">Copyright © 2018. All Rights Reserved. National Institute of Technology, Durgapur.
          </footer>
     </body>
     <script src="js/custom.js"></script>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['admin']==1){
+if(isset($_SESSION['admin'])){
   header('Location: src/logout.php');
 }
 ?>

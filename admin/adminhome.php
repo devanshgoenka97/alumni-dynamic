@@ -18,7 +18,6 @@ if(!isset($_SESSION['admin'])){
     /* Set gray background color and 100% height */
     .sidenav {
       background-color: #f1f1f1;
-      height: 100%;
     }
         
     /* On small screens, set height to 'auto' for the grid */
@@ -42,6 +41,8 @@ if(!isset($_SESSION['admin'])){
         <li><a id="iiip" href="#">Industry Institute Interaction</a></li>
         <li><a id="newsletter" href="#">E - Newsletter</a></li>
         <li><a id="gallery" href="#">Photo Gallery</a></li>
+        <li><a id="stats" href="#">Stats</a></li>
+        <li><a id="volunteers" href="#">Student Volunteers</a></li>
         <li><a id="region" href="#">Regional Coordinator Applications</a></li>
         <li><a id="logout" href="src/logout.php">Logout</a></li>
       </ul><br>

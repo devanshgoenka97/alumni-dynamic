@@ -1,10 +1,9 @@
 <?php
 include('connect.php');
-$dd = $_POST['dd'];
-$mm = $_POST['mm'];
-$yy = $_POST['yy'];
-$text = $_POST['desc'];
-$sql = "INSERT INTO upcomingevents VALUES(NULL,'".$dd."','".$mm."','".$yy."','".$text."')";
+$id = $_POST['uid'];
+$imageno = $_POST['imageno'];
+$caption = $_POST['caption'];
+$sql = "UPDATE volunteers SET imageno='".$imageno."',caption='".$caption."' WHERE id=".$id;
 $res = mysqli_query($conn,$sql);
 if($res==true){
 	echo '<script type="text/javascript">alert("Success");</script>';

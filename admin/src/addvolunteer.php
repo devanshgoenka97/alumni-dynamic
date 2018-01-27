@@ -1,12 +1,10 @@
 <?php
 include('connect.php');
-$lectureno = $_POST['imageno'];
-$speaker = $_POST['speaker'];
-$topic = $_POST['topic'];
-$date = $_POST['date'];
-$text = $_POST['desc'];
+$imageno = $_POST['imageno'];
+$caption = $_POST['caption'];
+echo $imageno.$caption;
 $file = $_FILES['img']['tmp_name'];
-$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/II".$lectureno.".JPG";
+$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/VOLUNTEER_".$imageno.".JPG";
 if(is_uploaded_file($file)){
 	if(move_uploaded_file($file, $filesavepath)){
 	}
@@ -14,7 +12,7 @@ if(is_uploaded_file($file)){
 		echo '<script type="text/javascript">alert("Problems in Image Upload");</script>';
 	}
 }
-$sql = "INSERT INTO iiiprogramme VALUES(NULL,'".$lectureno."','".$topic."','".$date."','".$speaker."','".$text."')";
+$sql = "INSERT INTO volunteers VALUES(NULL,'".$imageno."','".$caption."')";
 $res = mysqli_query($conn,$sql);
 if($res==true){
 	echo '<script type="text/javascript">alert("Success");</script>';
