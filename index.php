@@ -125,12 +125,41 @@ session_start();
                     <a href="#" id="photogallery" class="bot-nav text-center">Photo Gallery</a>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" class="bot-nav text-center">Contact Us</a>
+                    <a href="#contactuswrapper" data-toggle="modal"  id="contactus" class="bot-nav text-center">Contact Us</a>
                 </div>
                 <div class="col-md-1">
                 </div>
             </div>
         </section>
+
+        <div id="contactuswrapper" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+             <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title text-center">Get In Touch With Us!</h4>
+                </div>
+                <div class="modal-body">
+                   <b>Reach us at : </b>
+                   <br>
+                   <div class="row">
+                   <div class="col-md-4 col-md-offset-1">
+                    <i class="fa fa-home"></i><br>
+                    Old Academic Building, <br>
+                    NIT Durgapur, <br>
+                    Durgapur - 713209.
+                   </div>
+                   <div class="col-md-3 col-md-offset-1">
+                    <i class="fa fa-envelope"></i> <a href="mailto:alumni@admin.nitdgp.ac.in">alumni@admin.nitdgp.ac.in</a>
+                    <i class="fa fa-globe"></i> <a href="http://www.nitdgp.ac.in/alumni">www.nitdgp.ac.in/alumni</a>
+                   </div>
+                   </div>
+                </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+             </div>
+           </div>
+        </div>
 
         <footer class="footer container-fluid text-center foot">Copyright © 2018. All Rights Reserved. National Institute of Technology, Durgapur.
          </footer>
