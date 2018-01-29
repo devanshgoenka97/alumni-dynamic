@@ -1081,6 +1081,7 @@ while($res = mysqli_fetch_assoc($result)){
       ?>
       <br>
       <br>
+      NIT DGP Regional Alumni Hub for <b>India</b>
         <div class="row">
             <div class="col-md-10 col-md-offset-1 table-responsive">
               <table class="table table-striped">
@@ -1284,6 +1285,250 @@ while($res = mysqli_fetch_assoc($result)){
                        <td><a class="btn btn-success" href="src/region.php?city=imphal">Interested</a></td>
                       </tr>
 
+                    </tbody>
+              </table>
+            </div>
+        </div>
+
+      <br>
+      <br>
+      NIT DGP Regional Alumni Hub for <b>Abroad</b>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 table-responsive">
+              <table class="table table-striped">
+                    <thead>
+                      <tr>
+                         <th>Continent</th>
+                         <th>Country</th>
+                         <th>City</th>
+                         <th>Regional Coordinator</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="14">North America</td>
+                        <td rowspan="13">USA</td>
+                        <td>San Francisco</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=san_francisco">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Los Angeles</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=los_angeles">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>New York - New Jersey</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=new_york">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Chicago</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=chicago">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>San Diego</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=san_diego">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Phoenix</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=phoenix">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Denver</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=denver">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Dallas</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=dallas">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Boston</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=boston">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Cincinnati</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=cincinnati">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Houston</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=houston">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Miami</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=miami">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Atlanta</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=atlanta">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Canada</td>
+                        <td>Toronto</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=canada">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">South America</td>
+                        <td>Mexico</td>
+                        <td>Mexico City</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=mexico_city">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Brazil</td>
+                        <td>Rio De Janeiro</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=brazil">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="14">Asia</td>
+                        <td>Bangladesh</td>
+                        <td>Dhaka</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=dhaka">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Nepal</td>
+                        <td>Kathmandu</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=nepal">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Bhutan</td>
+                        <td>Thimpu - Paro</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=bhutan">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Singapore</td>
+                        <td>Singapore</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=singapore">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Japan</td>
+                        <td>Tokyo</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=tokyo">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>South Korea</td>
+                        <td>Seoul</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=south_korea">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Malaysia</td>
+                        <td>Kuala Lumpur</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=malaysia">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Thailand</td>
+                        <td>Bangkok</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=bangkok">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Mauritius</td>
+                        <td>Port Louis</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=mauritius">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>UAE</td>
+                        <td>Dubai - Abu Dhabi</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=uae">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Bahrain</td>
+                        <td>Manama</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=manama">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Kuwait</td>
+                        <td>Kuwait City</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=kuwait_city">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Russia</td>
+                        <td>Moscow</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=moscow">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Sri Lanka</td>
+                        <td>Colombo</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=colombo">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="11">Europe</td>
+                        <td>England/UK</td>
+                        <td>London</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=london">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Scotland</td>
+                        <td>Glasgow</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=glasgow">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>France</td>
+                        <td>Paris</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=paris">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Sweden</td>
+                        <td>Stockholm</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=stockholm">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Spain</td>
+                        <td>Madrid</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=madrid">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Italy</td>
+                        <td>Rome</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=rome">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Netherlands</td>
+                        <td>Amsterdam</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=amsterdam">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Austria</td>
+                        <td>Vienna</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=vienna">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">Germany</td>
+                        <td>Berlin</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=berlin">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Hamburg</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=hamburg">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Munich</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=munich">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">Australia</td>
+                        <td rowspan="4">Australia</td>
+                        <td>Sydney</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=sydney">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Melbourne</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=melbourne">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Brisbane</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=brisbane">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Perth</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=perth">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">Africa</td>
+                        <td>South Africa</td>
+                        <td>Johannesburg</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=johannesburg">Interested</a></td>
+                      </tr>
+                      <tr>
+                        <td>Kenya</td>
+                        <td>Nairobi</td>
+                        <td><a class="btn btn-success" href="src/region.php?city=nairobi">Interested</a></td>
+                      </tr>
                     </tbody>
               </table>
             </div>
