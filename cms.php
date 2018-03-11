@@ -105,42 +105,42 @@
   </ol>
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/Carousel1.jpg" class="carousel-images">
+      <img src="static/img/Carousel1.jpg" class="carousel-images">
       <div class="carousel-caption">
         <h3>Standing Strong Since 1960</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/Carousel2.jpg" class="carousel-images">
+      <img src="static/img/Carousel2.jpg" class="carousel-images">
       <div class="carousel-caption">
         <h3></h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/Carousel3.jpg" class="carousel-images">
+      <img src="static/img/Carousel3.jpg" class="carousel-images">
       <div class="carousel-caption">
         <h3>Welcome to NIT Durgapur</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/IMG_7194.JPG" class="carousel-images">
+      <img src="static/img/IMG_7194.JPG" class="carousel-images">
       <div class="carousel-caption">
         <h3>Alumni Meet at Dhaka, Bangladesh</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/IMG_7654.JPG" class="carousel-images">
+      <img src="static/img/IMG_7654.JPG" class="carousel-images">
       <div class="carousel-caption">
         <h3>Alumni during Global Meet 2017</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/Carousel4.jpg" class="carousel-images">
+      <img src="static/img/Carousel4.jpg" class="carousel-images">
       <div class="carousel-caption">
         <h3></h3>
       </div>
@@ -248,7 +248,7 @@
         echo '<div class="col-md-3">
       <div class="gallery shadow">
   <a target="_blank" href="img/NOTABLE_'.$imageno.'.JPG">
-    <img src="img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
+    <img src="static/img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
   </a>
   <div class="desc">'.$name.'</div>
 </div>
@@ -272,7 +272,7 @@
         echo '<div class="col-md-3">
       <div class="gallery shadow">
   <a target="_blank" href="img/NOTABLE_'.$imageno.'.JPG">
-    <img src="img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
+    <img src="static/img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
   </a>
   <div class="desc">'.$name.'</div>
 </div>
@@ -296,7 +296,7 @@
         echo '<div class="col-md-3">
       <div class="gallery shadow">
   <a target="_blank" href="img/NOTABLE_'.$imageno.'.JPG">
-    <img src="img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
+    <img src="static/img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
   </a>
   <div class="desc">'.$name.'</div>
 </div>
@@ -343,7 +343,7 @@
 <div id="messagefromdeanwrapper" class="messagefromdeancontent">
 	<div class="row imagewrapper">
 		<div class="col-md-3 imagecontainer">
-            <img id="deanimage" src="img/nkroy.jpg" class="shadow"/>
+            <img id="deanimage" src="static/img/nkroy.jpg" class="shadow"/>
 		</div>
 		<div class="col-md-5 imagedescription shadow">
 			<h3 class="imagetext" id="mainheader">Prof. Nirmal Kumar Roy</h3>
@@ -381,7 +381,7 @@
 	</div>
 	<div class="row team">
 		<div class="col-md-3 col-md-offset-1">
-      <img src="img/nkroy.jpg" class="img-responsive shadow team-image" />
+      <img src="static/img/nkroy.jpg" class="img-responsive shadow team-image" />
     </div>
     <div class="col-md-7 shadow team-text">
       <h3 class="imagetext" id="mainheader">Prof. Nirmal Kumar Roy</h3>
@@ -394,7 +394,7 @@
 	</div>
   <div class="row team">
     <div class="col-md-3 col-md-offset-1">
-      <img src="img/ssr.jpg" class="img-responsive shadow team-image" /> 
+      <img src="static/img/ssr.jpg" class="img-responsive shadow team-image" /> 
     </div>
     <div class="col-md-7 shadow team-text">
       <h3 class="imagetext" id="mainheader">Dr. Shibhendu Shekhar Roy</h3>
@@ -407,7 +407,7 @@
   </div>
   <div class="row team">
     <div class="col-md-3 col-md-offset-1">
-      <img src="img/dipteshdas.jpg" class="img-responsive shadow team-image" />
+      <img src="static/img/dipteshdas.jpg" class="img-responsive shadow team-image" />
     </div>
     <div class="col-md-7 shadow team-text">
       <h3 class="imagetext" id="mainheader">Dr. Diptesh Das</h3>
@@ -803,7 +803,7 @@
     $content = $res['content'];
     echo '<div class="btw-label col-md-10 col-md-offset-1">
       <div class="row">
-        <img src="img/L'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
+        <img src="static/img/L'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
         <div class="col-md-8 btw-text shadow">
             <h4> Speaker: '.$speaker.'<b></b></h4>
             <h4> Topic : '.$topic.'</h4>
@@ -823,7 +823,7 @@
       <div class="modal-body">
         <p class="text-center"><b>'.$topic.'</b></p>
         <p class="text-center"><b>'.$speaker.'</b></p>
-        <img class="img-responsive btw-modal-image" src="img/L'.$lectureno.'.JPG"/>
+        <img class="img-responsive btw-modal-image" src="static/img/L'.$lectureno.'.JPG"/>
          '.$content.'
       </div>
       <div class="modal-footer">
@@ -869,7 +869,7 @@ while($res = mysqli_fetch_assoc($result)){
    $desc = $res['description'];
    echo '<div class="gallery shadow">
   <a data-toggle="modal" data-target="#notable'.$imageno.'" href="#notable3">
-    <img src="img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
+    <img src="static/img/NOTABLE_'.$imageno.'.JPG" width="300" height="200">
   </a>
   <div class="desc">'.$name.'</div>
 </div>';
@@ -881,7 +881,7 @@ while($res = mysqli_fetch_assoc($result)){
       </div>
       <div class="modal-body row">
       <div class="col-md-4">
-      <img src="img/NOTABLE_'.$imageno.'.JPG" width="250" height="200">
+      <img src="static/img/NOTABLE_'.$imageno.'.JPG" width="250" height="200">
       </div>
       <div class="col-md-6 col-md-offset-1">
         <h3><b>'.$name.'</b></h3>
@@ -908,7 +908,7 @@ while($res = mysqli_fetch_assoc($result)){
   $caption = $res['caption'];
   echo '<div class="gallery shadow">
   <a target="_blank" href="img/IMG_'.$imageno.'.JPG">
-    <img src="img/IMG_'.$imageno.'.JPG" width="300" height="200">
+    <img src="static/img/IMG_'.$imageno.'.JPG" width="300" height="200">
   </a>
   <div class="desc">'.$caption.'</div>
 </div>';
@@ -970,7 +970,7 @@ while($res = mysqli_fetch_assoc($result)){
     $content = $res['content'];
     echo '<div class="btw-label col-md-10 col-md-offset-1">
       <div class="row">
-        <img src="img/II'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
+        <img src="static/img/II'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
         <div class="col-md-8 btw-text shadow">
             <h4> Speaker: '.$speaker.'<b></b></h4>
             <h4> Topic : '.$topic.'</h4>
@@ -990,7 +990,7 @@ while($res = mysqli_fetch_assoc($result)){
       <div class="modal-body">
         <p class="text-center"><b>'.$topic.'</b></p>
         <p class="text-center"><b>'.$speaker.'</b></p>
-        <img class="img-responsive btw-modal-image" src="img/II'.$lectureno.'.JPG"/>
+        <img class="img-responsive btw-modal-image" src="static/img/II'.$lectureno.'.JPG"/>
          '.$content.'
       </div>
       <div class="modal-footer">
@@ -1031,7 +1031,7 @@ while($res = mysqli_fetch_assoc($result)){
        $caption = $res['caption'];
        echo '<div class="gallery shadow">
        <a target="_blank" href="img/VOLUNTEER_'.$imageno.'.JPG">
-       <img src="img/VOLUNTEER_'.$imageno.'.JPG" width="300" height="200">
+       <img src="static/img/VOLUNTEER_'.$imageno.'.JPG" width="300" height="200">
        </a>
       <div class="desc">'.$caption.'</div>
       </div>';
@@ -1570,7 +1570,7 @@ while($res = mysqli_fetch_assoc($result)){
     $content = $res['content'];
     echo '<div class="btw-label col-md-10 col-md-offset-1">
       <div class="row">
-        <img src="img/NEWS_'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
+        <img src="static/img/NEWS_'.$lectureno.'.JPG" class="img-responsive col-md-2 shadow btw-image"/>
         <div class="col-md-8 btw-text shadow">
             <h5>Date: '.$date.'</h5>
         </div>
@@ -1586,7 +1586,7 @@ while($res = mysqli_fetch_assoc($result)){
         <h4 class="modal-title text-center">E - Newsletter #'.$lectureno.'</h4>
       </div>
       <div class="modal-body">
-        <img class="img-responsive btw-modal-image" src="img/NEWS_'.$lectureno.'.JPG"/>
+        <img class="img-responsive btw-modal-image" src="static/img/NEWS_'.$lectureno.'.JPG"/>
          '.$content.'
       </div>
       <div class="modal-footer">

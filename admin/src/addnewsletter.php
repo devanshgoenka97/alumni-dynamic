@@ -4,7 +4,7 @@ $lectureno = $_POST['imageno'];
 $date = $_POST['date'];
 $text = $_POST['desc'];
 $file = $_FILES['img']['tmp_name'];
-$filesavepath= dirname(dirname(dirname(__FILE__)))."/img/NEWS_".$lectureno.".JPG";
+$filesavepath= dirname(dirname(dirname(__FILE__)))."/static/img/NEWS_".$lectureno.".JPG";
 if(is_uploaded_file($file)){
 	if(move_uploaded_file($file, $filesavepath)){
 	}

@@ -21,17 +21,16 @@ if(isset($_SESSION['admin'])){
         <link rel="stylesheet" href="../css/responsive.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/loader.js"></script>
-        <script src="admin.js"></script>
+        <script src="static/js/loader.js"></script>
 	</head>
     
     <body>
         <div id="overlay">
-            <img src="img/loader.gif" id="loader" />
+            <img src="static/img/loader.gif" id="loader" />
         </div>
     	<header class="header container-fluid" id="header">
             <div class="row header-text">
-            <img class="logo col-md-1" src="../img/blue-logo.png"/>
+            <img class="logo col-md-1" src="../static/img/blue-logo.png"/>
             <div class="primary-header-text col-md-5">
             <h3 class="primary-text">
                 National Institute of Technology Durgapur
@@ -89,5 +88,5 @@ if(isset($_SESSION['admin'])){
         <footer class="footer container-fluid text-center foot">Copyright © 2017. All Rights Reserved. National Institute of Technology, Durgapur.
          </footer>
     </body>
-    <script src="../js/custom.js"></script>
+    <script src="../static/js/custom.js"></script>
 </html>
