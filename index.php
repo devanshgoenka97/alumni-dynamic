@@ -94,7 +94,6 @@ session_start();
                 </li>
                 <li><a href="javascript:void(0);" id="regionalcoordinator">Regional Coordinators</a></li>
                 <li><a href="javascript:void(0);" id="newsletter">E-Newsletter</a></li>
-                <li><a target="_new" href="http://nitdaa.org">NITDAA</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php
